@@ -1,20 +1,35 @@
 // C_and_Cpp_Practice.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+// Allows input and output of streams
 #include <iostream>
+
+// Allows the use of the std namespace (I can use cout without writting std::cout
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	                                   /*          ARRAYS         */
+
+	// Arrays can be declared with or without initialization
+
+	// no initialization, array of size 5
+	int A[5];
+
+	// with initialization
+	int B[] = { 2,4,6,8,10 };
+
+	// All of an array's elements can be printed using a for loop
+
+	// Classic C for loop
+	for (int i = 0; i < 5; i++)
+	{
+		cout << B[i] << endl;
+	}
+
+	// C++ for each loop
+	for (int x : B)
+	{
+		cout << x << endl;
+	}
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
