@@ -16,8 +16,8 @@ struct Rectangle
 	int width;
 
 };
-
-			/*          STRUCTURES END        */
+ 
+					/*          STRUCTURES END        */
 
 int main()
 {
