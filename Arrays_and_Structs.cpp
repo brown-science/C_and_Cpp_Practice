@@ -17,7 +17,7 @@ struct Rectangle
 
 };
 
-						/*          STRUCTURES END        */
+			/*          STRUCTURES END        */
 
 int main()
 {
