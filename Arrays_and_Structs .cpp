@@ -1,5 +1,3 @@
-// C_and_Cpp_Practice.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 // Allows input and output of streams
 #include <iostream>
