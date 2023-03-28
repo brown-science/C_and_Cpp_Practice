@@ -3,7 +3,7 @@
 #include <iostream>
 #include <stdio.h>
 
-// Allows the use of the std namespace (I can use cout without writting std::cout
+// Allows the use of the std namespace (I can use cout without writting std::cout)
 using namespace std;
 
 
@@ -17,7 +17,7 @@ struct Rectangle
 
 };
 
-									/*          STRUCTURES END        */
+						/*          STRUCTURES END        */
 
 int main()
 {
