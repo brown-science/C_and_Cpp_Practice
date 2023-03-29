@@ -5,6 +5,20 @@
 
 using namespace std;
 
+/*          STRUCTURES         */
+
+struct Rectangle
+{
+	int length;
+	int width;
+
+};
+
+/*          STRUCTURES END        */
+
+
+/*          FUNCTIONS         */
+
 void swap_by_value(int a, int b)
 {
 	int temp;
@@ -29,6 +43,17 @@ void swap_by_reference(int &a, int &b)
 	a = temp;
 }
 
+int area(struct Rectangle r)
+{
+	return (r.length * r.width);
+}
+
+void double_length(struct Rectangle *r)
+{
+	r -> length = r -> length * 2;
+}
+
+/*          FUNCTIONS END         */
 
 int main()
 {
@@ -57,7 +82,21 @@ int main()
 	swap_by_reference(x, y);
 	cout << x << endl; // 50
 	cout << y << endl; // 10
-			
+
+	// Structures can also be passed as parameters by value, address, or reference
+	// Here is an example of passing a structure by value
+
+	struct Rectangle rect = { 10, 15 }; // (length, width)
+	int rect_area = area(rect); // 150
+	cout << "The area of rect is: " << rect_area << endl;
+	
+	// Here is an example of passing a structure by address (reference would work too)
+
+	cout << "The length of rect is: " << rect.length << endl; // 10
+	double_length(&rect);
+	cout << "The length of rect is: " << rect.length; // 20
+
+
 	return 0;
 					
 }
